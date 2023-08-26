@@ -24,7 +24,7 @@ x-ibm-configuration:
 
             /************/
             context.set("message.headers.header2","h2");
-              context.set("message.header.headerX","HX");
+              context.set("message.header.headerX","HX");//will not work as http header it wil create object called header on the message structure
              // oR
             context.message.header.set('header3', "h3");
              
