@@ -1,0 +1,139 @@
+{
+	"request": {
+		"headers": {
+			"Host": "localhost:9444",
+			"User-Agent": "curl/7.55.1",
+			"Accept": "*/*",
+			"Content-type": "application/json",
+			"Content-Length": "7"
+		},
+		"parameters": {},
+		"status": {},
+		"body": "{\"a\":1}",
+		"content-type": "application/json",
+		"authorization": "",
+		"verb": "POST",
+		"protocol": "https",
+		"websocket": false,
+		"uri": "https://172.18.0.6:9443/localtest/sandbox/day1/echo/",
+		"search": "",
+		"querystring": "",
+		"path": "/day1/echo/",
+		"date": "Saturday, 26 Aug 2023 02:26:44 GMT-0400 (EDT)"
+	},
+	"system": {
+		"datetime": "2023-08-26T02:26:44",
+		"datetime-utc": "2023-08-26T06:26:44.914Z",
+		"timezone": "-04:00",
+		"time": {
+			"hour": 2,
+			"minute": 26,
+			"seconds": 44
+		},
+		"date": {
+			"day-of-week": 6,
+			"day-of-month": 26,
+			"month": 8,
+			"year": 2023
+		}
+	},
+	"session": {
+		"apiGateway": "apiconnect",
+		"domainName": "apiconnect",
+		"localAddress": "172.18.0.6:9443",
+		"clientAddress": "172.18.0.1",
+		"timeStarted": 2743755,
+		"transactionID": "1392",
+		"globalTransactionID": "f54bb3c764e99b2400000570"
+	},
+	"env": {
+		"path": "sandbox"
+	},
+	"policy": {
+		"gatewayscript": {
+			"enableDebugger": false
+		}
+	},
+	"message": {
+		"variables": {},
+		"headers": {
+			"User-Agent": "curl/7.55.1",
+			"Accept": "*/*",
+			"Content-Length": "7",
+			"X-Client-IP": "172.18.0.1",
+			"X-Global-Transaction-ID": "f54bb3c764e99b2400000570",
+			"X-RateLimit-Limit": "name=default,100;",
+			"X-RateLimit-Remaining": "name=default,74;",
+			"content-type": "application/json"
+		},
+		"original": {
+			"headers": {
+				"Host": "localhost:9444",
+				"User-Agent": "curl/7.55.1",
+				"Accept": "*/*",
+				"Content-type": "application/json",
+				"Content-Length": "7"
+			}
+		},
+		"status": {},
+		"body": "{\"a\":1}",
+		"attributes": {
+			"fromClient": true
+		}
+	},
+	"api": {
+		"endpoint": {
+			"address": "172.18.0.6",
+			"hostname": "localhost"
+		},
+		"operation": {
+			"id": "",
+			"path": "/"
+		},
+		"type": "REST",
+		"name": "echo-context-variables",
+		"id": "0bc651c8-30e6-4a99-be12-e416dfd113a4",
+		"version": "1.0.0",
+		"root": "day1/echo",
+		"org": {
+			"id": "85fa6eb2-a415-434a-bf99-a01965ddf555",
+			"name": "localtest"
+		},
+		"catalog": {
+			"id": "5f6940ad-aac2-4299-b4c9-78a0192a752e",
+			"name": "sandbox",
+			"path": "sandbox"
+		},
+		"properties": {
+			"target-url": "http://example.com/operation-name"
+		},
+		"compatibility": {
+			"security": {
+				"return-v5-responses": false,
+				"copy-id-headers-to-message": false
+			},
+			"enforce-required-params": true,
+			"wrapper-policies": {
+				"allow-chunked-uploads": true
+			}
+		}
+	},
+	"client": {
+		"app": {},
+		"org": {}
+	},
+	"plan": {
+		"name": "",
+		"version": "",
+		"title": "",
+		"id": "",
+		"spaceId": "",
+		"spaceName": "",
+		"rate-limit": [
+			{
+				"value": "100/1hour",
+				"hard-limit": "off"
+			}
+		]
+	}
+}

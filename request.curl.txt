@@ -1,0 +1,1 @@
+curl --request POST --header "Content-type: application/json" --data-raw "{\"a\":1}" --url "https://localhost:9444/localtest/sandbox/day1/echo/" -k
